@@ -9,7 +9,7 @@ tokenizer = punkt.PunktWordTokenizer()
 
 # Read corpus file, tokenize, normalize
 texts = [[term.lower() for term in [re.sub("\.$", "", token) for token in tokenizer.tokenize(doc)]] 
-        for doc in open(sys.argv[1]).read().split('\n')]
+        for doc in open(sys.argv[1]).read().decode('utf-8').split('\n')]
 # Filter non-word tokens
 texts = [filter(lambda x: (len(x) > 1 or x.isalpha()) and not x.isdigit(), text) for text in texts]
 
