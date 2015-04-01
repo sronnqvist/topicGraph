@@ -34,7 +34,7 @@ for doc in corpus:
 termtot = float(sum(termcntr.values()))
 topictot = len(corpus)
 
-topics = model.show_topics(topics=-1, topn=50, formatted=False)
+topics = model.show_topics(num_topics=-1, num_words=50, formatted=False)
 
 #P(t|w)
 ptw = collections.defaultdict(lambda: {})
