@@ -4,8 +4,6 @@ Run:
 python convert_corpus.py <input file> <output corpus name>
 python build_graph.py <corpus name>
 
-Further configuration in source code, modeling parameters, pre-processing, etc.
-
-
+Further configuration in source code, e.g. pre-processing, number of topics and probability threshold between keywords and topics.
 
 
