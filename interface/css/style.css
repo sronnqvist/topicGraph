@@ -29,6 +29,7 @@
 body{
     margin: 0px;
     background-color: #15181f;
+    background-color: #fff;
 }
 
 .info{
@@ -72,9 +73,18 @@ body{
     font-family: sans-serif;
     font-size: 9pt;
     color: #666;
-    //display: none;
+    display: none;
 }
 
 .header h1{
     font-size: 12pt;
+}
+
+.controls{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+.controls input{
+    width: 25px;
 }
